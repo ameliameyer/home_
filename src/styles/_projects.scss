@@ -136,10 +136,11 @@
   }
 
   img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-  }
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
 
   .project-info {
     padding: 15px;
