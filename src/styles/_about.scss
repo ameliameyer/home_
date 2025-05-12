@@ -15,6 +15,9 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
+  // REMOVE or reduce the font-size here
+  // font-size: 60px; ← remove this line completely
+
   @media only screen and (min-width: $cut) {
     flex-wrap: nowrap;
   }
@@ -22,22 +25,16 @@
 
 .tech {
   margin: 10px;
-  font-size: 16px; /* ✅ Add this to override giant parent font size */
-  
+  font-size: 16px;
+
   h2 {
     font-size: 18px;
-    margin-bottom: 10px;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
+    margin-bottom: 8px;
   }
 
   li {
     font-size: 14px;
-    line-height: 1.4;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
   }
 }
 
