@@ -1,0 +1,21 @@
+# Site settings
+title: Amelia Meyer
+description: My data science portfolio
+# baseurl: "/particle" # the subpath of your site, e.g. /blog
+# url: "https://ameliameyer.github.io/home" # the base hostname & protocol for your site 
+# User settings
+username: Amelia Meyer
+user_description: Hi, I'm Amelia. I graduated in June of 2022 with a B.S. in Statistics and Data Science, and a Minor in German. 
+Presently, I work at Magic Touch Software International as a Database Manager and Support Specialist creating customized data reports with SQL, Excel, and Crystal Reports; designing web interfaces with Html; and providing Software expertise for our CRM Software to Dental Laboratories around the world.
+I'm currently working on projects in my spare time to build up my expertise within the field of Data Science and Machine Learning. If you are interested in working on a project with me, hiring me, or chatting, please don't hesitate to reach out!
+user_title: Data Science & Machine Learning 
+email: amelianmeyer@gmail.com 
+twitter_username: ameliameyer
+github_username: ameliameyer
+gplus_username:  ameliameyer
+
+# Google-analytics
+google-analytics:
+  id: ""
+
+exclude: ['package.json', 'src' , 'node_modules']
