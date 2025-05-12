@@ -2,51 +2,46 @@
   width: 90%;
   margin: 0 auto;
   max-width: 960px;
+
   @media only screen and (min-width: $cut) {
     width: 80%;
   }
 }
 
-.tech {
-  margin: 10px;
-  
-  /* Remove large font size and adjust text style */
-  ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
-  }
-
-  ul li {
-    font-size: 14px; /* Adjust font size */
-    margin-bottom: 5px; /* Add space between list items */
-    line-height: 1.4; /* Improve line spacing */
-    font-family: Arial, sans-serif; /* Optional: Change font */
-  }
-}
-
 .user {
   text-align: center;
-  font-size: 60px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  p {
-    font-size: 16px;
-  }
+
   @media only screen and (min-width: $cut) {
     flex-wrap: nowrap;
-    font-size: 75px;
+  }
+}
+
+.tech {
+  margin: 10px;
+  font-size: 16px; /* ✅ Add this to override giant parent font size */
+  
+  h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 5px;
   }
 }
 
 .user-details {
   text-align: center;
   margin: 5px auto;
-}
-
-.tech h2 {
-  font-size: 18px; /* Adjust header size */
-  margin-bottom: 10px; /* Add spacing after the header */
-  font-family: Arial, sans-serif; /* Optional: Change font */
 }
