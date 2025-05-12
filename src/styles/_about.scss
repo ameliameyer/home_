@@ -9,6 +9,19 @@
 
 .tech {
   margin: 10px;
+  
+  /* Remove large font size and adjust text style */
+  ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+  }
+
+  ul li {
+    font-size: 14px; /* Adjust font size */
+    margin-bottom: 5px; /* Add space between list items */
+    line-height: 1.4; /* Improve line spacing */
+    font-family: Arial, sans-serif; /* Optional: Change font */
+  }
 }
 
 .user {
@@ -30,4 +43,10 @@
 .user-details {
   text-align: center;
   margin: 5px auto;
+}
+
+.tech h2 {
+  font-size: 18px; /* Adjust header size */
+  margin-bottom: 10px; /* Add spacing after the header */
+  font-family: Arial, sans-serif; /* Optional: Change font */
 }
