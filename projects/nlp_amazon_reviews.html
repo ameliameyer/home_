@@ -8,62 +8,30 @@ permalink: /nlp_amazon_reviews/
   <a href="https://ameliameyer.github.io/home_/" class="btn" style="padding: 10px 20px; background-color: #007acc; color: white; text-decoration: none; border-radius: 5px;">Back to Home</a>
   <a href="https://github.com/ameliameyer/nlp_amazon_reviews" target="_blank" class="btn" style="padding: 10px 20px; background-color: #24292e; color: white
     ; text-decoration: none; border-radius: 5px;">
-    <i class="fa fa-github-alt"></i> View GitHub Repo
+    <i class="fa fa-github-alt"></i> GitHub Repo
   </a>
 </div>
-
-<div class="details">
-  <h1>Amazon Reviews</h1>
-  <p>
-    Can machines detect the mood of a song? This project uses Spotify audio features to classify songs as either 'happy' or 'not happy' based on valence score.
-  </p>
-
-  <div class="project-buttons" style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-  <a href="https://ameliameyer.github.io/home_/" class="btn" style="padding: 10px 20px; background-color: #007acc; color: white; text-decoration: none; border-radius: 5px;">Back to Home</a>
-  <a href="https://github.com/ameliameyer/nlp_amazon_reviews" target="_blank" class="btn" style="padding: 10px 20px; background-color: #24292e; color: white; text-decoration: none; border-radius: 5px;">View GitHub Repo</a>
-  </div>
-
-  <a href="https://github.com/ameliameyer/nlp_amazon_reviews" class="w3-button w3-black w3-padding-large w3-margin-top" target="_blank">
-      <i class="fa fa-github-alt"></i> Github Repository
-    </a>
-
-</div>
-
----
-layout: project_page
-title: Amazon Review Rating Prediction
-permalink: /amazon_reviews/
----
 
 <div class="user-details">
   <h1>Predicting Amazon Review Ratings from Text</h1>
   <p>
     This project uses Natural Language Processing (NLP) to classify Amazon product reviews based on written text.
-    The goal was to uncover consumer insight by leveraging text-based features and machine learning models.
+    The goal was to gain consumer insight by leveraging text-based features and machine learning models.
   </p>
-
-  <a href="https://github.com/ameliameyer/amazon_reviews_nlp" class="w3-button w3-black w3-padding-large w3-margin-top" target="_blank">
-    <i class="fa fa-github-alt"></i> GitHub Repository
-  </a>
 </div>
 
 <!-- Dataset -->
 <section>
-  <h2>🗃️ Dataset</h2>
-  <p><strong>Source:</strong> <a href="https://www.kaggle.com/datasets" target="_blank">Amazon Product Reviews on Kaggle</a></p>
+  <h2>Dataset</h2>
+  <p><strong>Source:</strong> <a href="https://www.kaggle.com/datasets/divyaprakashr/amazon-products" target="_blank">Amazon Product Reviews on Kaggle</a></p>
   <p><strong>Size:</strong> 500,000+ reviews</p>
-  <ul>
-    <li><code>review_text</code>: Freeform customer review content</li>
-    <li><code>rating</code>: Target variable (1 to 5 stars)</li>
-    <li><code>verified_purchase</code>, <code>helpful_vote</code>, <code>category</code>, and other metadata</li>
-  </ul>
 </section>
 
 <!-- Preprocessing -->
 <section>
-  <h2>🧹 Data Preprocessing</h2>
+  <h2> Data Preprocessing</h2>
   <ol>
-    <li>Handled missing values in <code>title</code> and <code>review_text</code></li>
+    <li>Handled missing values in <code>title</code> and <code>review_text</code> columns</li>
     <li>Analyzed rating distributions (found left-skewed pattern)</li>
     <li>Text Cleaning:
       <ul>
@@ -79,7 +47,7 @@ permalink: /amazon_reviews/
 
 <!-- Insights -->
 <section>
-  <h2>🔍 Key Insights</h2>
+  <h2> Key Insights</h2>
   <h3>Most Common Phrases in 1-star vs 5-star Reviews</h3>
   <p>I used CountVectorizer to extract bigrams. Common themes included:</p>
   <ul>
@@ -100,7 +68,7 @@ permalink: /amazon_reviews/
 
 <!-- Modeling -->
 <section>
-  <h2>🧠 Modeling Approach</h2>
+  <h2></h2> Modeling Approach</h2>
   <ul>
     <li>Naive Bayes</li>
     <li>Logistic Regression</li>
@@ -112,7 +80,7 @@ permalink: /amazon_reviews/
 
 <!-- Future Work -->
 <section>
-  <h2>🚀 Future Work</h2>
+  <h2></h2> Future Work</h2>
   <ul>
     <li>Focus on top-reviewed products to derive more actionable insights</li>
     <li>Handle class imbalance (e.g., down-sample dominant ratings)</li>
@@ -122,7 +90,7 @@ permalink: /amazon_reviews/
 
 <!-- Tools -->
 <section>
-  <h2>🛠️ Tools & Libraries</h2>
+  <h2> Tools & Libraries</h2>
   <ul>
     <li>Python: Pandas, NumPy, Scikit-learn</li>
     <li>NLP: TextBlob, Gensim, CountVectorizer</li>
