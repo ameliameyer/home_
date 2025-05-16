@@ -22,3 +22,7 @@ exclude:
   - package.json
   - src
   - node_modules
+
+# files to include in the build
+include:
+  - projects
