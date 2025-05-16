@@ -27,24 +27,6 @@ permalink: /nlp_amazon_reviews/
   <p><strong>Size:</strong> 500,000+ reviews</p>
 </section>
 
-<!-- Preprocessing -->
-<section>
-  <h2> Data Preprocessing</h2>
-  <ol>
-    <li>Handled missing values in <code>title</code> and <code>review_text</code> columns</li>
-    <li>Analyzed rating distributions (found left-skewed pattern)</li>
-    <li>Text Cleaning:
-      <ul>
-        <li>Tokenization and lowercasing</li>
-        <li>Stopword removal</li>
-        <li>Sentiment scoring (TextBlob)</li>
-        <li>Emoji detection</li>
-        <li>Bigrams (CountVectorizer)</li>
-      </ul>
-    </li>
-  </ol>
-</section>
-
 <!-- Insights -->
 <section>
   <h2> Key Insights</h2>
@@ -76,16 +58,6 @@ permalink: /nlp_amazon_reviews/
   </ul>
   <p><strong>Evaluation:</strong> Accuracy, F1 Score, and Confusion Matrix</p>
   <p><strong>Best F1 Score:</strong> 0.81 — with room for improvement via hyperparameter tuning or class balancing.</p>
-</section>
-
-<!-- Future Work -->
-<section>
-  <h2></h2> Future Work</h2>
-  <ul>
-    <li>Focus on top-reviewed products to derive more actionable insights</li>
-    <li>Handle class imbalance (e.g., down-sample dominant ratings)</li>
-    <li>Incorporate review metadata (e.g., product category, helpful votes)</li>
-  </ul>
 </section>
 
 <!-- Tools -->
