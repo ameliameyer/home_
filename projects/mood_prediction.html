@@ -15,82 +15,39 @@ permalink: /mood_prediction/
 <div class="user-details">
   <h1>Mood Classification using Spotify Audio Features</h1>
   <p>
-    Can machines detect the mood of a song? This project uses Spotify audio features to classify songs as either 'happy' or 'not happy' based on valence score.
+    Can we detect the mood of a song without listening to it? This project uses Spotify audio features to classify songs as either 'happy' or 'not happy' 
+    based on valence score.
   </p>
 
-  <a href="https://github.com/ameliameyer/mood_prediction" class="w3-button w3-black w3-padding-large w3-margin-top" target="_blank">
-      <i class="fa fa-github-alt"></i> Github Repository
-    </a>
-
-</div>
-
-<!-- Motivation -->
+<!-- Dataset -->
 <section>
-  <h2>🎯 Motivation</h2>
-  <p>
-    Music plays a powerful role in shaping how we feel. I wanted to explore whether machine learning could detect a song's emotional tone based on Spotify's audio features.
+  <h3>Dataset</h3>
+  <p><strong>Source:</strong> <a href="https://spotipy.readthedocs.io/en/2.25.0/" target="_blank">Spotipy</a></p>
+  <p><strong>Size:</strong> 10,460 Spotify songs </p>
+  <p>I used a Spotify developer account along with Spotipy to retrieve the audio features from songs across several genres.
+     I assigned a new mood variable to each song using the value for audio feature `valence` which represents how positive a song is 
+     (a score of 0 means the song is very sad, and 1 that the song is very happy). Below we can see how positivity of music has been changing over time.
   </p>
-</section>
-
-<!-- Project Overview -->
-<section>
-  <h2>📌 Project Overview</h2>
-  <ul>
-    <li>Cleaned and prepared a dataset of thousands of songs</li>
-    <li>Engineered a binary mood label from Spotify's valence score</li>
-    <li>Trained and compared Logistic Regression, Random Forest, SVM, and XGBoost models</li>
-    <li>Evaluated models using accuracy and F1 score</li>
-  </ul>
+  <img src="/img/sp_mood_genres.png" alt="Moods over time">
 </section>
 
 <!-- Results -->
 <section>
-  <h2>📊 Results</h2>
-  <p>Random Forest performed the best overall:</p>
-  <table>
-    <thead>
-      <tr>
-        <th>Model</th>
-        <th>Accuracy</th>
-        <th>F1 Score</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>Random Forest</td><td>0.72</td><td>0.72</td></tr>
-      <tr><td>XGBoost</td><td>0.71</td><td>0.71</td></tr>
-      <tr><td>SVM</td><td>0.71</td><td>0.71</td></tr>
-      <tr><td>Logistic Regression</td><td>0.69</td><td>0.69</td></tr>
-    </tbody>
-  </table>
-  <p><strong>Insight:</strong> Danceability and energy were key predictors of a song’s mood.</p>
-</section>
+  <h2>Predicting Mood</h2>
+  <p>Danceability and energy were key predictors of a song’s mood. Intuitively, we may think that happier songs have higher energy and danceability levels.
+    This was reflected in our dataset as well.
+    <br>
+  
+    Ultimately, we were able to predict whether a song was happy or not with 72% accuracy. In future projects, I can expand my predictions to mood levels 
+    instead of just 'happy' or 'not happy' in order create playlists or recommendations for users.   
+  </p>
 
 <!-- Tools -->
 <section>
-  <h2>🛠️ Tools & Technologies</h2>
+  <h2>Tools</h2>
   <ul>
-    <li>Python: Pandas, NumPy, Scikit-learn, Seaborn, Matplotlib</li>
+    <li>Python: Pandas, NumPy, Scikit-learn, Seaborn, Matplotlib, Random Forest</li>
     <li>Kaggle Notebooks / Jupyter</li>
     <li>Git & GitHub</li>
-  </ul>
-</section>
-
-<!-- What I Learned -->
-<section>
-  <h2>📚 What I Learned</h2>
-  <ul>
-    <li>How to preprocess and engineer labels from continuous features</li>
-    <li>How to compare models using relevant metrics (accuracy & F1)</li>
-    <li>Challenges of reducing emotional qualities to binary labels</li>
-  </ul>
-</section>
-
-<!-- Future Work -->
-<section>
-  <h2>🚀 Future Work</h2>
-  <ul>
-    <li>Predict valence as a regression or multi-class variable</li>
-    <li>Incorporate genre or lyrics for richer mood detection</li>
-    <li>Use deep learning with raw audio or spectrogram inputs</li>
   </ul>
 </section>
