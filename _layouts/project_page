@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/img/favicon.ico' | relative_url }}">
+    {% include head.html %}
+    <style>
+      body {
+        font-family: 'YourPrimaryFont', sans-serif; /* Optional override */
+        padding: 2rem;
+        background-color: #fff;
+      }
+      .project-container {
+        max-width: 900px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="project-container">
+      {{ content }}
+    </div>
+    {% include footer.html %}
+  </body>
+</html>
