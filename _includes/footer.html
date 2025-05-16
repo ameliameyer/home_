@@ -1,16 +1,16 @@
 <footer class="footer">
   <div class="footer-content">
-    <p>&copy; {{ site.username }} {{ site.time | date: '%Y' }} • Built with using GitHub Pages</p>
-    <div class="footer-links">
-      <a href="mailto:amelianmeyer@gmail.com" aria-label="Email">Email</a> |
-      <a href="https://github.com/ameliameyer" target="_blank" aria-label="GitHub">GitHub</a> |
-      <a href="https://www.linkedin.com/in/ameliameyer/" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+    <p>&copy; {{ site.username }} {{ site.time | date: '%Y' }} • Built with ❤️ using GitHub Pages</p>
+    <div class="footer-icons">
+      <a href="mailto:amelianmeyer@gmail.com" aria-label="Email" title="Email me">
+        <i class="fa fa-envelope"></i>
+      </a>
+      <a href="https://github.com/ameliameyer" target="_blank" aria-label="GitHub" title="GitHub">
+        <i class="fa fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/ameliameyer/" target="_blank" aria-label="LinkedIn" title="LinkedIn">
+        <i class="fa fa-linkedin"></i>
+      </a>
     </div>
   </div>
 </footer>
-
-<!-- Scripts -->
-<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script src="{{ '/assets/js/sweet-scroll.min.js' | prepend: site.baseurl }}"></script>
-<script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
-{% include google-analytics.html %}
