@@ -1,20 +1,33 @@
 <div id="particles-js">
-  <div class="header">
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.ico">
+  <header class="header">
     <h1>
-        <span class="site-title">{{site.username}}</span>
-        <span class="site-description">{{site.user_title}}</span>
-      </h1>
-      <div class="header-icons">
-        <a aria-label="Send email"  target="_blank"  href="mailto:amelianmeyer@gmail.com"><i class="icon fa fa-envelope"></i></a>
-        <a aria-label="My Linkedin" target="_blank" href="https://www.linkedin.com/in/amelia-meyer-387987174/"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
-        <a aria-label="My Github" target="_blank" href="https://github.com/ameliameyer"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
-        <a aria-label="My Resume" target="_blank" href= "{{"/assets/Resume_AmeliaMeyer.pdf" | prepend: site.baseurl }}"><i class="icon fa fa-adobe" aria-hidden="true"></i></a>
-      </div>
-      <div class="header-links">
-        <a class="link" href="#about" data-scroll>About Me</a>
-        <a class="link" href="#projects" data-scroll>Projects</a>
-      </div>
-  </div>
-  <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+      <span class="site-title">{{ site.username }}</span>
+      <span class="site-description">{{ site.user_title }}</span>
+    </h1>
+
+    <div class="header-icons">
+      <a aria-label="Email" title="Email me" target="_blank" href="mailto:amelianmeyer@gmail.com">
+        <i class="icon fa fa-envelope"></i>
+      </a>
+      <a aria-label="LinkedIn" title="Visit my LinkedIn" target="_blank" href="https://www.linkedin.com/in/amelia-meyer-387987174/">
+        <i class="icon fa fa-linkedin" aria-hidden="true"></i>
+      </a>
+      <a aria-label="GitHub" title="Visit my GitHub" target="_blank" href="https://github.com/ameliameyer">
+        <i class="icon fa fa-github-alt" aria-hidden="true"></i>
+      </a>
+      <a aria-label="Resume" title="View my Resume (PDF)" target="_blank" href="{{ '/assets/Resume_AmeliaMeyer.pdf' | prepend: site.baseurl }}">
+        <i class="icon fa fa-file-pdf-o" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    <nav class="header-links">
+      <a class="link" href="{{ site.baseurl }}/#about" data-scroll>About Me</a>
+      <a class="link" href="{{ site.baseurl }}/#projects" data-scroll>Projects</a>
+      <a class="link" href="{{ site.baseurl }}/blog">Blog</a>
+    </nav>
+  </header>
+
+  <a class="down" href="#about" data-scroll>
+    <i class="icon fa fa-chevron-down" aria-hidden="true"></i>
+  </a>
 </div>
