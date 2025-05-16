@@ -15,3 +15,74 @@ permalink: /mood_prediction/
     </a>
 
 </div>
+
+<!-- Motivation -->
+<section>
+  <h2>🎯 Motivation</h2>
+  <p>
+    Music plays a powerful role in shaping how we feel. I wanted to explore whether machine learning could detect a song's emotional tone based on Spotify's audio features.
+  </p>
+</section>
+
+<!-- Project Overview -->
+<section>
+  <h2>📌 Project Overview</h2>
+  <ul>
+    <li>Cleaned and prepared a dataset of thousands of songs</li>
+    <li>Engineered a binary mood label from Spotify's valence score</li>
+    <li>Trained and compared Logistic Regression, Random Forest, SVM, and XGBoost models</li>
+    <li>Evaluated models using accuracy and F1 score</li>
+  </ul>
+</section>
+
+<!-- Results -->
+<section>
+  <h2>📊 Results</h2>
+  <p>Random Forest performed the best overall:</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Model</th>
+        <th>Accuracy</th>
+        <th>F1 Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Random Forest</td><td>0.72</td><td>0.72</td></tr>
+      <tr><td>XGBoost</td><td>0.71</td><td>0.71</td></tr>
+      <tr><td>SVM</td><td>0.71</td><td>0.71</td></tr>
+      <tr><td>Logistic Regression</td><td>0.69</td><td>0.69</td></tr>
+    </tbody>
+  </table>
+  <p><strong>Insight:</strong> Danceability and energy were key predictors of a song’s mood.</p>
+</section>
+
+<!-- Tools -->
+<section>
+  <h2>🛠️ Tools & Technologies</h2>
+  <ul>
+    <li>Python: Pandas, NumPy, Scikit-learn, Seaborn, Matplotlib</li>
+    <li>Kaggle Notebooks / Jupyter</li>
+    <li>Git & GitHub</li>
+  </ul>
+</section>
+
+<!-- What I Learned -->
+<section>
+  <h2>📚 What I Learned</h2>
+  <ul>
+    <li>How to preprocess and engineer labels from continuous features</li>
+    <li>How to compare models using relevant metrics (accuracy & F1)</li>
+    <li>Challenges of reducing emotional qualities to binary labels</li>
+  </ul>
+</section>
+
+<!-- Future Work -->
+<section>
+  <h2>🚀 Future Work</h2>
+  <ul>
+    <li>Predict valence as a regression or multi-class variable</li>
+    <li>Incorporate genre or lyrics for richer mood detection</li>
+    <li>Use deep learning with raw audio or spectrogram inputs</li>
+  </ul>
+</section>
