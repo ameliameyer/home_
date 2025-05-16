@@ -25,40 +25,31 @@ permalink: /nlp_amazon_reviews/
   <h2>Dataset</h2>
   <p><strong>Source:</strong> <a href="https://www.kaggle.com/datasets/divyaprakashr/amazon-products" target="_blank">Amazon Product Reviews on Kaggle</a></p>
   <p><strong>Size:</strong> 500,000+ reviews</p>
+  <p>Of our 500,000 reviews, significantly more were given a 5-star rating. This bias should be kept in mind for the product conclusions.</p>
+  <img src="/img/amazon_rating_dist.png" alt="Amazon Rating Distribution">
 </section>
 
 <!-- Insights -->
 <section>
-  <h2> Key Insights</h2>
   <h3>Most Common Phrases in 1-star vs 5-star Reviews</h3>
-  <p>I used CountVectorizer to extract bigrams. Common themes included:</p>
   <ul>
     <li>1-star reviews: <em>"poor quality", "stopped working", "waste money"</em></li>
     <li>5-star reviews: <em>"highly recommend", "works great", "love product"</em></li>
   </ul>
-
-  <h3>Topic Modeling by Rating</h3>
-  <p>After lemmatization, I used LDA to extract dominant themes per rating:</p>
-  <ul>
-    <li>1-star: <em>useless, return, cheap, broken</em></li>
-    <li>5-star: <em>love, great, easy, perfect</em></li>
-  </ul>
+  <p>We can see a clear difference in the tone of the phrases for 1 vs 5-star ratings. 
+    However, we can also see some outliers such as 'phone case' and 'screen protector'. 
+    This give us insight as to what the users are focused on in their reviews and can potentially be used to target product improvements.</p>
+   <img src="/img/amazon_tf_idf.png" alt="Common Phrases">
 
   <h3>Sentiment Analysis vs Star Rating</h3>
-  <p>I compared sentiment polarity with the actual star rating and trained models to predict the rating from review text.</p>
-</section>
-
-<!-- Modeling -->
-<section>
-  <h2></h2> Modeling Approach</h2>
+  <p>I compared sentiment polarity with the actual star rating and trained models to predict the rating from review text. I was able to do this with
+  81% accuracy. We should keep bias in mind here and in the future, we would option to test our model on new reviews to get a better meausure of accuracy. </p>
   <ul>
     <li>Naive Bayes</li>
     <li>Logistic Regression</li>
     <li>Random Forest</li>
   </ul>
-  <p><strong>Evaluation:</strong> Accuracy, F1 Score, and Confusion Matrix</p>
-  <p><strong>Best F1 Score:</strong> 0.81 — with room for improvement via hyperparameter tuning or class balancing.</p>
-</section>
+  </section>
 
 <!-- Tools -->
 <section>
