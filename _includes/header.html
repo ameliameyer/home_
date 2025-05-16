@@ -1,7 +1,4 @@
-{% if page.url == "/home_/" %}
 <div id="particles-js">
-{% endif %}
-
   <header class="header">
     <h1>
       <span class="site-title">{{ site.username }}</span>
@@ -12,6 +9,7 @@
       <a aria-label="Email" title="Email me" href="javascript:void(0);" onclick="alert('My email address is: amelianmeyer@gmail.com')">
         <i class="icon fa fa-envelope"></i>
       </a>
+</a>
       <a aria-label="LinkedIn" title="Visit my LinkedIn" target="_blank" href="https://www.linkedin.com/in/amelia-meyer-387987174/">
         <i class="icon fa fa-linkedin" aria-hidden="true"></i>
       </a>
@@ -31,9 +29,9 @@
     </nav>
   </header>
 
-  {% if page.url == "/home_/" %}
   <a class="down" href="#about" data-scroll>
     <i class="icon fa fa-chevron-down" aria-hidden="true"></i>
   </a>
-</div> <!-- closes particles-js -->
-  {% endif %}
+</div>
+
+
