@@ -1,0 +1,36 @@
+<div class="user-details">
+  <h1>Mood Classification using Spotify Audio Features</h1>
+  <p>
+    Can machines detect the mood of a song? This project uses Spotify audio features to classify songs as either 'happy' or 'not happy' based on valence score.
+  </p>
+
+  <h2> Dataset</h2>
+  <ul>
+    <li><strong>Features:</strong> Danceability, Energy, Tempo, Acousticness, Valence</li>
+    <li><strong>Target:</strong> Binary label — 1 = Happy (valence > 0.5), 0 = Not Happy</li>
+  </ul>
+
+  <h2> Models Used</h2>
+  <ul>
+    <li>Logistic Regression</li>
+    <li>Random Forest</li>
+    <li>SVM</li>
+    <li>XGBoost</li>
+  </ul>
+
+  <h2> Results</h2>
+  <p>Random Forest performed best with an accuracy and F1 score of 0.72.</p>
+
+  <img src="{{ '/assets/img/proj_images/sp_mood_cm.png' | relative_url }}" alt="Confusion Matrix" style="width: 300px; display: block; margin: 20px auto;" />
+
+  <h2> Tools</h2>
+  <ul>
+    <li>Python (Pandas, Sklearn, Seaborn, Matplotlib)</li>
+    <li>Kaggle / Jupyter Notebooks</li>
+    <li>Git & GitHub</li>
+  </ul>
+
+  <p>
+    🔗 <a href="https://github.com/ameliameyer/mood_prediction" target="_blank">View GitHub Repo</a>
+  </p>
+</div>
