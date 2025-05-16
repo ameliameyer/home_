@@ -20,3 +20,106 @@ permalink: /nlp_amazon_reviews/
     </a>
 
 </div>
+
+---
+layout: project_page
+title: Amazon Review Rating Prediction
+permalink: /amazon_reviews/
+---
+
+<div class="user-details">
+  <h1>Predicting Amazon Review Ratings from Text</h1>
+  <p>
+    This project uses Natural Language Processing (NLP) to classify Amazon product reviews based on written text.
+    The goal was to uncover consumer insight by leveraging text-based features and machine learning models.
+  </p>
+
+  <a href="https://github.com/ameliameyer/amazon_reviews_nlp" class="w3-button w3-black w3-padding-large w3-margin-top" target="_blank">
+    <i class="fa fa-github-alt"></i> GitHub Repository
+  </a>
+</div>
+
+<!-- Dataset -->
+<section>
+  <h2>🗃️ Dataset</h2>
+  <p><strong>Source:</strong> <a href="https://www.kaggle.com/datasets" target="_blank">Amazon Product Reviews on Kaggle</a></p>
+  <p><strong>Size:</strong> 500,000+ reviews</p>
+  <ul>
+    <li><code>review_text</code>: Freeform customer review content</li>
+    <li><code>rating</code>: Target variable (1 to 5 stars)</li>
+    <li><code>verified_purchase</code>, <code>helpful_vote</code>, <code>category</code>, and other metadata</li>
+  </ul>
+</section>
+
+<!-- Preprocessing -->
+<section>
+  <h2>🧹 Data Preprocessing</h2>
+  <ol>
+    <li>Handled missing values in <code>title</code> and <code>review_text</code></li>
+    <li>Analyzed rating distributions (found left-skewed pattern)</li>
+    <li>Text Cleaning:
+      <ul>
+        <li>Tokenization and lowercasing</li>
+        <li>Stopword removal</li>
+        <li>Sentiment scoring (TextBlob)</li>
+        <li>Emoji detection</li>
+        <li>Bigrams (CountVectorizer)</li>
+      </ul>
+    </li>
+  </ol>
+</section>
+
+<!-- Insights -->
+<section>
+  <h2>🔍 Key Insights</h2>
+  <h3>Most Common Phrases in 1-star vs 5-star Reviews</h3>
+  <p>I used CountVectorizer to extract bigrams. Common themes included:</p>
+  <ul>
+    <li>1-star reviews: <em>"poor quality", "stopped working", "waste money"</em></li>
+    <li>5-star reviews: <em>"highly recommend", "works great", "love product"</em></li>
+  </ul>
+
+  <h3>Topic Modeling by Rating</h3>
+  <p>After lemmatization, I used LDA to extract dominant themes per rating:</p>
+  <ul>
+    <li>1-star: <em>useless, return, cheap, broken</em></li>
+    <li>5-star: <em>love, great, easy, perfect</em></li>
+  </ul>
+
+  <h3>Sentiment Analysis vs Star Rating</h3>
+  <p>I compared sentiment polarity with the actual star rating and trained models to predict the rating from review text.</p>
+</section>
+
+<!-- Modeling -->
+<section>
+  <h2>🧠 Modeling Approach</h2>
+  <ul>
+    <li>Naive Bayes</li>
+    <li>Logistic Regression</li>
+    <li>Random Forest</li>
+  </ul>
+  <p><strong>Evaluation:</strong> Accuracy, F1 Score, and Confusion Matrix</p>
+  <p><strong>Best F1 Score:</strong> 0.81 — with room for improvement via hyperparameter tuning or class balancing.</p>
+</section>
+
+<!-- Future Work -->
+<section>
+  <h2>🚀 Future Work</h2>
+  <ul>
+    <li>Focus on top-reviewed products to derive more actionable insights</li>
+    <li>Handle class imbalance (e.g., down-sample dominant ratings)</li>
+    <li>Incorporate review metadata (e.g., product category, helpful votes)</li>
+  </ul>
+</section>
+
+<!-- Tools -->
+<section>
+  <h2>🛠️ Tools & Libraries</h2>
+  <ul>
+    <li>Python: Pandas, NumPy, Scikit-learn</li>
+    <li>NLP: TextBlob, Gensim, CountVectorizer</li>
+    <li>Visualization: Seaborn, Matplotlib</li>
+    <li>Jupyter Notebooks</li>
+  </ul>
+</section>
+
