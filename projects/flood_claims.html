@@ -6,25 +6,44 @@ permalink: /flood_claims/
 
 <div class="project-buttons" style="display: flex; justify-content: space-between; margin-bottom: 20px;">
   <a href="https://ameliameyer.github.io/home_/" class="btn" style="padding: 10px 20px; background-color: #007acc; color: white; text-decoration: none; border-radius: 5px;">Back to Home</a>
-  <a href="https://github.com/ameliameyer/flood_claims" target="_blank" class="btn" style="padding: 10px 20px; background-color: #24292e; color: white
-    ; text-decoration: none; border-radius: 5px;">
+  <a href="https://github.com/ameliameyer/flood_claims" target="_blank" class="btn" style="padding: 10px 20px; background-color: #24292e; color: white; text-decoration: none; border-radius: 5px;">
     <i class="fa fa-github-alt"></i> GitHub Repo
   </a>
 </div>
 
 <div class="user-details">
-  <h1> Flood Claims</h1>
+  <h1>Flood Claims Analysis</h1>
   <p>
-    This project is currently in progress.
+    This project explores FEMA’s redacted flood insurance claims data from 2015 to 2025. The analysis focuses on trends in claim frequency, total losses, repetitive flood events, and geographic distribution. The goal is to understand where flood risks are concentrated and how damages vary across states and counties. Visualizations and summary statistics are exported to Tableau for interactive analysis.
   </p>
 </div>
 
 <!-- Dataset -->
 <section>
   <h3>Dataset</h3>
-  <p><strong>Source:</strong> <a href="" target="_blank">Fema Redacted Flood Claims</a></p>
-  <p><strong>Size:</strong></p>
-  <p></p>
-  <img src="/home_/projects/img/flood_claims.png" alt="Flood Claims" width="300">
-  
+  <p><strong>Source:</strong> <a href="https://www.fema.gov/openfema-data-page/fima-nfip-redacted-claims-v2" target="_blank">FEMA Redacted Flood Claims</a></p>
+  <p><strong>Size:</strong> Approximately 2.5 million records across 10 years</p>
+  <p><strong>Key Variables:</strong> Claim year, building and contents loss, total paid, county, state, elevation certificate status, repetitive loss classification</p>
+  <img src="/home_/projects/img/flood_claims.png" alt="Flood Claims Tableau Snapshot" width="300">
+</section>
+
+<!-- Tools & Techniques -->
+<section>
+  <h3>Tools and Techniques</h3>
+  <ul>
+    <li>Python (Pandas, NumPy, Seaborn, Matplotlib)</li>
+    <li>Data cleaning and wrangling</li>
+    <li>Feature engineering and missing data handling</li>
+    <li>Geographic grouping and aggregation</li>
+    <li>Tableau for dashboard development</li>
+    <li>Version control with GitHub</li>
+  </ul>
+</section>
+
+<!-- Project Status -->
+<section>
+  <h3>Status</h3>
+  <p>
+    This project is still in progress. Tableau dashboards are under development, and deeper analysis of repetitive loss properties and inflation-adjusted trends is currently underway.
+  </p>
 </section>
