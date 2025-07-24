@@ -1,17 +1,11 @@
 #deep_dives {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   width: 90%;
   max-width: 960px;
   margin: 0 auto;
-
-  @media only screen and (min-width: $cut) {
-    width: 80%;
-  }
+  padding: 30px 15px;
 
   .user-details {
-    margin: 20px auto;
+    margin-bottom: 20px;
 
     h2 {
       font-size: 2rem;
@@ -20,8 +14,7 @@
 
     p {
       font-size: 1.1rem;
-      color: $main;
-      margin-bottom: 1rem;
+      color: #555;
     }
   }
 
@@ -29,9 +22,6 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
-    margin: 30px auto;
-    padding: 0 15px;
-    max-width: 960px;
 
     @media (min-width: 700px) {
       grid-template-columns: 1fr 1fr;
