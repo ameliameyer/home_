@@ -1,7 +1,7 @@
 ---
 layout: project_page
-title: SQL Problem Deep Dive
-permalink: /sql_deep_dive/
+title: Top Regional Managers SQL Deep Dive
+permalink: /sql_regional_managers_deep_dive/
 ---
 
 <div class="project-buttons" style="display: flex; justify-content: space-between; margin-bottom: 20px;">
@@ -12,10 +12,8 @@ permalink: /sql_deep_dive/
 </div>
 
 <div class="user-details">
-  <h1>SQL Problem Deep Dive</h1>
-  <p>
-    This deep dive walks through a challenging SQL problem related to data aggregation and joins.
-  </p>
+  <h1>Top Regional Managers SQL Deep Dive</h1>
+  <p>This deep dive walks through a SQL query to identify the top 3 regional managers based on their teams' total sales in the last 6 months.</p>
 </div>
 
 <!-- Video Walkthrough -->
@@ -27,31 +25,37 @@ permalink: /sql_deep_dive/
   </div>
 </section>
 
-<!-- Dataset -->
+<!-- SQL Problem -->
 <section>
-  <h3>Dataset</h3>
-  <p><strong>Source:</strong> <a href="https://example.com/sql_dataset" target="_blank">Sample SQL Dataset</a></p>
-  <p><strong>Size:</strong> 50,000+ rows</p>
-  <p><strong>Key Tables:</strong> Customers, Orders, Payments</p>
+  <h3>SQL Problem Statement</h3>
+  <p>Find the top 3 performing regional managers based on the total monthly sales made by their team in the last 6 months.</p>
+</section>
+
+<!-- SQL Script Summary -->
+<section>
+  <h3>Approach and SQL Script</h3>
+  <p>The query uses Common Table Expressions (CTEs) to:</p>
+  <ul>
+    <li>Calculate total sales by region in the last 6 months</li>
+    <li>Select the top 3 regions by sales</li>
+    <li>Find the regional managers responsible for those top regions</li>
+  </ul>
+  <p><strong>Key SQL elements:</strong> CTEs, aggregation, filtering by date, joining employees and sales tables.</p>
 </section>
 
 <!-- Tools & Techniques -->
 <section>
   <h3>Tools and Techniques</h3>
   <ul>
-    <li>SQL (PostgreSQL)</li>
-    <li>Complex joins and subqueries</li>
-    <li>Window functions (ROW_NUMBER, RANK)</li>
-    <li>Performance optimization</li>
-    <li>Data visualization in Tableau</li>
-    <li>Version control with GitHub</li>
+    <li>SQL (T-SQL with CTEs)</li>
+    <li>Data aggregation and filtering</li>
+    <li>Analytical thinking and query optimization</li>
+    <li>Video explanation of query logic</li>
   </ul>
 </section>
 
-<!-- Project Status -->
+<!-- Status -->
 <section>
   <h3>Status</h3>
-  <p>
-    Completed initial query optimization and dashboard integration. Further analysis planned.
-  </p>
+  <p>Completed — includes a walkthrough video explaining the query and business logic.</p>
 </section>
