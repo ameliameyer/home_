@@ -11,6 +11,12 @@
   }
 }
 
+#data_dives {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+
 .user-projects {
   margin: 20px auto;
 
@@ -120,50 +126,4 @@
   padding: 0 15px;
 
   @media (min-width: 700px) {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.project-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.2s ease;
-
-  &:hover {
-    transform: translateY(-5px);
-  }
-
-  img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-bottom: 1px solid #eee;
-}
-
-  .project-info {
-    padding: 15px;
-
-    h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 14px;
-      margin-bottom: 10px;
-      color: #333;
-    }
-
-    .project-link {
-      font-weight: bold;
-      color: $main;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-}
+    grid-template-
