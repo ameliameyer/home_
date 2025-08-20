@@ -1,0 +1,70 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Particles Header</title>
+  
+  <!-- Google fonts -->
+  <!-- Google fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Your styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Vincent Garreau's particles.js via jsDelivr (correct package) -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+  <header class="hero">
+    <!-- The particles canvas lives in here -->
+    <div id="particles-js" aria-hidden="true"></div>
+
+    <!-- Your header content over the particles -->
+    <div class="hero__content">
+      <h1>Amelia Meyer</h1>
+      <h3>Data Science & Machine Learning</h3>
+      
+       <!-- Hero icons row -->
+    <div class="hero__icons">
+  <a aria-label="Email" href="mailto:amelianmeyer@gmail.com" target="_blank">
+    <i class="fas fa-envelope icon"></i>
+  </a>
+  <a aria-label="LinkedIn" href="https://www.linkedin.com/in/amelia-meyer-387987174/" target="_blank">
+    <i class="fab fa-linkedin-in icon"></i>
+  </a>
+  <a aria-label="GitHub" href="https://github.com/ameliameyer" target="_blank">
+    <i class="fab fa-github-alt icon"></i>
+  </a>
+  <a aria-label="Resume" href="{{ '/assets/Resume_AmeliaMeyer.pdf' | prepend: site.baseurl }}" target="_blank">
+    <i class="fas fa-file icon"></i>
+  </a>
+  <a aria-label="Medium" href="https://medium.com/@amelianmeyer" target="_blank">
+    <i class="fab fa-medium icon"></i>
+  </a>
+</div>
+
+<!-- Navigation -->
+      <div class="hero__nav">
+        <a href="#about" class="hero__link">About Me</a>
+        <a href="#skills" class="hero__link">Skills</a>
+        <a href="#certificates" class="hero__link">Certificates</a>
+        <a href="#projects" class="hero__link">Projects</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section containers -->
+  <main>
+    <div id="about"></div>
+    <div id="skills"></div>
+    <div id="certificates"></div>
+    <div id="projects"></div>
+  </main>
+
+  <script src="js/app.js" defer></script>
