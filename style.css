@@ -302,3 +302,21 @@ html, body { height: 100%; margin: 0; font-family: system-ui, -apple-system, Seg
 .project-item.python.active {
   display: block;
 }
+
+/* FOOTER */
+footer {
+  background-color: #1a222c; /* same as particles background */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
