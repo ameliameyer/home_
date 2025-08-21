@@ -295,15 +295,7 @@ html {
   display: block;
 }
 
-.project-item.tableau,
-.project-item.sql,
-.project-item.python {
-  display: none;
-}
-
-.project-item.tableau.active,
-.project-item.sql.active,
-.project-item.python.active {
+.project-item {
   display: block;
 }
 
