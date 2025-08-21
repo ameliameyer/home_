@@ -129,5 +129,34 @@ html, body { height: 100%; margin: 0; font-family: system-ui, -apple-system, Seg
   line-height: 1.6;
 }
 
+.skills {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #fafafa; /* light gray background for contrast */
+}
 
+.skills .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skills h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left; /* keeps items aligned while section stays centered */
+  display: inline-block; /* centers the whole list */
+}
+
+.skills-list li {
+  font-size: 1.2rem;
+  color: #444;
+  margin: 10px 0;
+}
 
