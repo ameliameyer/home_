@@ -160,3 +160,33 @@ html, body { height: 100%; margin: 0; font-family: system-ui, -apple-system, Seg
   margin: 10px 0;
 }
 
+.certificates {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f4f4f4; /* slightly different from Skills section for visual separation */
+}
+
+.certificates .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.certificates h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.cert-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left; 
+  display: inline-block; /* centers the whole list */
+}
+
+.cert-list li {
+  font-size: 1.2rem;
+  color: #444;
+  margin: 10px 0;
+}
