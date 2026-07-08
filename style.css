@@ -207,7 +207,7 @@ html {
 .in_practice {
   padding: 50px 0;
   text-align: center;
-  background-color: #fafafa; /* matches Skills section for visual separation */
+  background-color: #fafafa;
 }
 
 .in_practice .container {
@@ -222,17 +222,39 @@ html {
 }
 
 .practice-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 650px;
+  margin: 0 auto;
 }
 
-.practice-list li {
-  font-size: 1.2rem;
+.practice-item {
+  display: block;
+  padding: 18px 25px;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: left;
+  text-decoration: none;
   color: #444;
-  margin: 10px 0;
+  transition: 0.2s ease;
+}
+
+.practice-item strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.practice-item p {
+  margin: 0;
+  color: #666;
+  line-height: 1.4;
+}
+
+.practice-item:hover {
+  color: #455b75;
+  transform: translateY(-2px);
 }
 
 /* PROJECTS */
