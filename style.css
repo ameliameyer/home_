@@ -204,7 +204,6 @@ html {
 }
 
 /* IN PRACTICE */
-/* IN PRACTICE */
 .in_practice {
   padding: 50px 0;
   text-align: center;
@@ -240,7 +239,7 @@ html {
 .projects {
   padding: 50px 0;
   text-align: center;
-  background-color: #fafafa;
+  background-color: #f4f4f4;
 }
 
 .projects .container {
