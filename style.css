@@ -203,6 +203,39 @@ html {
   margin: 10px 0;
 }
 
+/* IN PRACTICE */
+/* IN PRACTICE */
+.in_practice {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #fafafa; /* matches Skills section for visual separation */
+}
+
+.in_practice .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.in_practice h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.practice-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  display: inline-block;
+}
+
+.practice-list li {
+  font-size: 1.2rem;
+  color: #444;
+  margin: 10px 0;
+}
+
 /* PROJECTS */
 .projects {
   padding: 50px 0;
