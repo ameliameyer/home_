@@ -370,3 +370,52 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+/* PRACTICE DETAIL PAGES */
+.practice-page {
+  position: relative;
+  min-height: 100vh;
+  background: #1a222c;
+  padding: 70px 20px;
+  overflow: hidden;
+}
+
+.practice-page #particles-js {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+.practice-page .container {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.96);
+  padding: 50px;
+  border-radius: 12px;
+}
+
+.practice-page h1 {
+  font-size: 2.8rem;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.practice-page p {
+  color: #666;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 30px;
+  color: #455b75;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
