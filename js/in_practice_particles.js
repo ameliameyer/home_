@@ -1,4 +1,4 @@
 particlesJS.load(
   'particles-js',
-  '../practice_particles.json'
+  '../in_practice_particles.json'
 );
